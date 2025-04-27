@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # nexus-motion-portfolio
 A high-performance portfolio built with Next.js, React, and Framer Motion. Features responsive design with Tailwind CSS, smooth scroll animations via Lenis, dynamic theme switching, and optimized component rendering. Demonstrates expertise in modern front-end architecture, animation techniques, and performance optimization
 =======
@@ -39,3 +40,5 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 >>>>>>> 3158515 (Initial commit from Create Next App)
+=======
+>>>>>>> de22fb7 (next-framer_motion-lenis-folio-v1)
