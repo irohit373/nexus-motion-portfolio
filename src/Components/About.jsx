@@ -65,16 +65,11 @@ export default function About() {
                 I'm Rohit Deshmukh
               </motion.h2>
               <p className="text-lg text-gray-500">
-                Hi there! I'm Rohit, a passionate developer focused on creating
-                beautiful, functional websites and applications.
+                Hi there! I'm Rohit
               </p>
 
               <p className="text-ml text-gray-500">
-                With experience in both front-end and back-end technologies, I
-                enjoy bringing ideas to life through clean code and intuitive
-                design. My goal is to build digital experiences that are not
-                just visually appealing but also highly performant and
-                accessible.
+                Full-stack developer adept at architecting performant and scalable web solutions. Skilled in front-end paradigms leveraging JavaScript, React, Next.js, and UI animations via Framer-Motion. Back-end competencies encompass Python and relational database management with SQL. Experienced in data-driven insights utilizing Dataiku and business intelligence tools like PowerBI. Focused on constructing accessible and efficient digital products.
               </p>
 
               <div>
