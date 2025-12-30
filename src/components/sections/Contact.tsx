@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, Github, Linkedin, ArrowUpRight, Send, Sparkles } from "lucide-react";
+import { Mail, Github, Linkedin, ArrowUpRight, Send, Zap } from "lucide-react";
 
 export function Contact() {
   return (
@@ -50,47 +50,50 @@ export function Contact() {
               Ready to bring your ideas to life? Let's create something remarkable together.
             </p>
 
-            {/* Email CTA */}
-            <motion.a
-              href="mailto:deshmukhrohit373@gmail.com"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="block mb-12"
-            >
-              <div className="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-card border border-border hover:border-primary/50 transition-all duration-300 group hover:-translate-y-1">
-                <Mail className="w-5 h-5 text-primary" />
-                <span className="text-lg font-medium">deshmukhrohit373@gmail.com</span>
-                <ArrowUpRight className="w-5 h-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
-              </div>
-            </motion.a>
-
             {/* Social links */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="flex items-center justify-center gap-4 flex-wrap"
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="flex items-center justify-center gap-4 flex-wrap mb-12"
             >
               <a
                 href="https://github.com/irohit373"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 px-5 py-3 rounded-full bg-card/50 border border-border/50 hover:border-primary/50 transition-all duration-300 text-muted-foreground hover:text-foreground group"
+                className="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-card border border-border hover:border-primary/50 transition-all duration-300 group hover:-translate-y-1"
               >
-                <Github className="w-4 h-4 group-hover:text-primary transition-colors" />
-                <span className="text-sm font-medium">GitHub</span>
+                <Github className="w-5 h-5 text-primary" />
+                <span className="text-lg font-medium">GitHub</span>
+                <ArrowUpRight className="w-5 h-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
               </a>
               <a
                 href="https://linkedin.com/in/irohit373"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-card border border-border hover:border-primary/50 transition-all duration-300 group hover:-translate-y-1"
+              >
+                <Linkedin className="w-5 h-5 text-primary" />
+                <span className="text-lg font-medium">LinkedIn</span>
+                <ArrowUpRight className="w-5 h-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 group-hover:-translate-y-1 transition-all" />
+              </a>
+            </motion.div>
+
+            {/* Email CTA */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="flex items-center justify-center"
+            >
+              <a
+                href="mailto:deshmukhrohit373@gmail.com"
                 className="flex items-center gap-2 px-5 py-3 rounded-full bg-card/50 border border-border/50 hover:border-primary/50 transition-all duration-300 text-muted-foreground hover:text-foreground group"
               >
-                <Linkedin className="w-4 h-4 group-hover:text-primary transition-colors" />
-                <span className="text-sm font-medium">LinkedIn</span>
+                <Mail className="w-4 h-4 group-hover:text-primary transition-colors" />
+                <span className="text-sm font-medium">deshmukhrohit373@gmail.com</span>
               </a>
             </motion.div>
 
@@ -106,7 +109,7 @@ export function Contact() {
                 animate={{ rotate: [0, 180, 360], scale: [1, 1.2, 1] }}
                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
               >
-                <Sparkles className="w-6 h-6 text-primary/50" />
+                <Zap className="w-6 h-6 text-primary/50" />
               </motion.div>
             </motion.div>
           </motion.div>

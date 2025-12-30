@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Sparkles, Code2, Database, Server, Wrench } from "lucide-react";
+import { Tent, Code2, Database, Server, Wrench } from "lucide-react";
 
 const skills = [
   { category: "Languages", icon: Code2, items: ["JavaScript (ES6+)", "TypeScript", "Python", "PHP", "C++"] },
@@ -44,7 +44,7 @@ export function About() {
               transition={{ duration: 0.5 }}
               className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 mb-6"
             >
-              <Sparkles className="w-5 h-5 text-primary" />
+              <Tent className="w-5 h-5 text-primary" />
             </motion.div>
             <p className="text-muted-foreground text-sm tracking-widest uppercase mb-3">
               About
@@ -89,7 +89,7 @@ export function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="md:col-span-2 space-y-8"
+              className="md:col-span-2 space-y-6"
             >
               {skills.map((skillGroup, index) => {
                 const IconComponent = skillGroup.icon;

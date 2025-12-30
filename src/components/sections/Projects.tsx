@@ -10,8 +10,8 @@ const projects = [
     description:
       "AI-Powered SaaS platform with automated resume screening, intelligent candidate matching, and one-click interview scheduling. Reduces time-to-hire by 60% with LLM-based processing and async architecture.",
     tags: ["Next.js", "Python", "FastAPI", "PostgreSQL", "OpenAI API"],
-    link: "#",
-    github: "https://github.com/irohit373",
+    link: "https://velocity-h.vercel.app",
+    github: "https://github.com/irohit373/Velocity-HR",
     featured: true,
     date: "December 2025",
     image: velocityHrImage,
@@ -22,7 +22,7 @@ const projects = [
       "End-to-end flight search platform integrating multiple airline APIs. Features intelligent caching (60% latency reduction) and ML-based price prediction models with ~85% accuracy.",
     tags: ["Next.js", "Python", "Flask", "MongoDB", "Scikit-learn", "PyTorch"],
     link: "#",
-    github: "https://github.com/irohit373",
+    github: "https://github.com/irohit373/jetlens",
     featured: true,
     date: "June 2025",
     image: jetlensImage,
@@ -32,8 +32,8 @@ const projects = [
     description:
       "Scalable full-stack platform supporting real-time content delivery. Built with MERN stack, JWT authentication, and optimized MongoDB queries using indexing and aggregation pipelines.",
     tags: ["MongoDB", "Express.js", "React", "Node.js"],
-    link: "#",
-    github: "https://github.com/irohit373",
+    link: "https://learnify-ed-tech-platform-mern.vercel.app/",
+    github: "https://github.com/irohit373/Learnify-EdTech-Platform-MERN",
     featured: false,
     date: "November 2024",
     image: learnifyImage,
@@ -135,12 +135,12 @@ export function Projects() {
                     variants={imageVariants}
                     className="w-full h-full object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-card via-card/50 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-card via-card/20 to-transparent" />
                   
                   {/* Hover overlay with view button */}
                   <motion.div 
                     variants={overlayVariants}
-                    className="absolute inset-0 bg-primary/10 backdrop-blur-sm flex items-center justify-center"
+                    className="absolute inset-0 bg-primary/10  flex items-center justify-center"
                   >
                     <motion.div
                       initial={{ scale: 0.8, opacity: 0 }}
@@ -164,7 +164,6 @@ export function Projects() {
                   <div className="flex items-start justify-between mb-4">
                     <div className="flex flex-col gap-2">
                       <motion.div 
-                        whileHover={{ rotate: [0, -10, 10, 0] }}
                         transition={{ duration: 0.4 }}
                         className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center"
                       >
@@ -177,7 +176,7 @@ export function Projects() {
                         href={project.github}
                         target="_blank"
                         rel="noopener noreferrer"
-                        whileHover={{ scale: 1.2, rotate: 360 }}
+                        whileHover={{ scale: 1.2, y: -2 }}
                         transition={{ duration: 0.3 }}
                         className="text-muted-foreground hover:text-primary transition-colors"
                         aria-label="View on GitHub"
